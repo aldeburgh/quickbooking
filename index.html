@@ -21,8 +21,8 @@
 	<link rel='stylesheet' id='snape-main-css'  href='https://dr5m2lzl2o3wn.cloudfront.net/wp-content/themes/childtheme/assets/css/main.css?ver=5c45a038b793c' type='text/css' media='all' />
 	<script type='text/javascript' src='https://dr5m2lzl2o3wn.cloudfront.net/wp-content/themes/childtheme/assets/js/respond/src/respond.js?ver=1.0.0'></script>
 
-	<script type='text/javascript' src='https://tickets.snapemaltings.co.uk/snapemaltings/api/v3/webcomponents/js'> </script>
-	<link rel="import" href="https://tickets.snapemaltings.co.uk/snapemaltings/api/v3/webcomponents/html" />
+	<script src="https://webcomponents.spektrix.com/stable/webcomponents-loader.js"></script>
+	<script src="https://webcomponents.spektrix.com/stable/spektrix-component-loader.js" data-components="spektrix-basket-summary" async></script>
 
 	<!-- Google Tag Manager  -->
 	<script>
@@ -42,7 +42,8 @@
 			<a href="https://snapemaltings.co.uk"><img class="global-header__logo" src="https://dr5m2lzl2o3wn.cloudfront.net/wp-content/themes/childtheme/assets/images/snape-maltings-white.svg" /></a>
 		</div>
 		<div class="global-header__primary-nav primary-nav">
-			<a class="tickets-back-button" href="/basket/"><i class="fa fa-shopping-basket"></i> Basket <spektrix-basket-total></spektrix-basket-total></a>
+      
+			<spektrix-basket-summary client-name="snapemaltings" custom-domain="tickets.snapemaltings.co.uk"><a class="tickets-back-button" href="/basket/"><i class="fa fa-shopping-basket"></i> Basket <span data-basket-summary-currency></span><span data-basket-summary-basket-total></span></spektrix-basket-summary></a>
 		</div>
 	</section>
 </header>
